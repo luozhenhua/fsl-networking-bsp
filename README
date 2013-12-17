@@ -11,8 +11,8 @@ $: chmod a+x ~/bin/repo
 Download the SDK source:
 $: PATH=${PATH}:~/bin
 $: cd ~/
-$: mkdir fsl-networking-bsp
-$: cd fsl-networking-bsp
+$: mkdir fsl-networking-sdk-v1.4.5
+$: cd fsl-networking-sdk-v1.4.5
 $: repo init -u https://github.com/luozhenhua/fsl-networking-bsp -b fsl-qoriq-sdk-v1.4.5
 $: repo sync
 
