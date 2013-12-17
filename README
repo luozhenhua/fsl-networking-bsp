@@ -1,0 +1,40 @@
+Freescale's Networking Yocto SDK
+================================
+
+To get the SDK, you need to have `repo` installed and use it as:
+
+Install the `repo` utility:
+$: mkdir ~/bin
+$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$: chmod a+x ~/bin/repo
+
+Download the SDK source:
+$: PATH=${PATH}:~/bin
+$: cd ~/
+$: mkdir fsl-networking-bsp
+$: cd fsl-networking-bsp
+$: repo init -u https://github.com/luozhenhua/fsl-networking-bsp -b fsl-qoriq-sdk-v1.4.5
+$: repo sync
+
+Once this has complete, you will have all you need. To start a build, do:
+$: source ./fsl-setup-poky -m <machine> -j <gcc-parallel-threads> -i <bitbake-parallel-jobs>
+$: bitbake <target>
+
+You can use any directory to host your build. The source code will be checked out at fsl-community-bsp/poky
+
+Contributing
+------------
+To contribute to this layer you should the patches for review to the
+mailing list.
+
+Mailing list:
+    https://lists.yoctoproject.org/listinfo/meta-freescale
+
+Source code:
+    https://github.com/luozhenhua/fsl-networking-bsp
+
+When creating patches, please use something like:
+git format-patch -s --subject-prefix='fsl-networking-bsp][PATCH' origin
+
+When sending patches, please use something like:
+git send-email --to meta-freescale@yoctoproject.org <generated patch>
