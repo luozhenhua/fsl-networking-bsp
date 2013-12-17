@@ -5,11 +5,11 @@
 
   <remote fetch="git://git.am.freescale.net/gitolite/yocto" name="freescale"/>
 
-  <project remote="freescale" revision="dylan" name="poky" path="poky"/>
-  <project remote="freescale" revision="dylan" name="meta-oe" path="poky/meta-oe"/>
-  <project remote="freescale" revision="dylan" name="meta-virtualization" path="poky/meta-virtualization"/>
-  <project remote="freescale" revision="dylan" name="meta-fsl-ppc-toolchain" path="poky/meta-fsl-ppc-toolchain"/>
-  <project remote="freescale" revision="dylan-sdk1.5" name="meta-fsl-ppc" path="poky/meta-fsl-ppc"/>
-  <project remote="freescale" revision="dylan-sdk1.5" name="meta-fsl-networking" path="poky/meta-fsl-networking"/>
+  <project remote="freescale" revision="fsl-sdk-v1.4.5" name="poky" path="poky"/>
+  <project remote="freescale" revision="fsl-sdk-v1.4.5" name="meta-oe" path="poky/meta-oe"/>
+  <project remote="freescale" revision="fsl-sdk-v1.4.5" name="meta-virtualization" path="poky/meta-virtualization"/>
+  <project remote="freescale" revision="fsl-sdk-v1.4.5" name="meta-fsl-ppc-toolchain" path="poky/meta-fsl-ppc-toolchain"/>
+  <project remote="freescale" revision="fsl-sdk-v1.4.5" name="meta-fsl-ppc" path="poky/meta-fsl-ppc"/>
+  <project remote="freescale" revision="fsl-sdk-v1.4.5" name="meta-fsl-networking" path="poky/meta-fsl-networking"/>
 
 </manifest>
